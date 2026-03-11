@@ -8,6 +8,10 @@ import service3 from '../assets/service3.webp'
 import service4 from '../assets/service4.webp'
 import service5 from '../assets/service5.webp'
 import service6 from '../assets/service6.webp'
+import service9 from '../assets/service9.webp'
+import service10 from '../assets/service10.webp'
+import service11 from '../assets/service11.webp'
+import service12 from '../assets/service12.webp'
 
 const Services = () => {
   const { t } = useTranslation();
@@ -48,7 +52,33 @@ const Services = () => {
       title: t("metalCasting"),
       image: service6,
       className: "md:col-span-6 h-[550px]"
-    }
+    },
+  
+   
+    {
+      id: "07.",
+      title: t("machiningToolsFabrication"),
+      image: service10,
+      className: "md:col-span-8 h-[450px]"
+    },
+    {
+      id: "08.",
+      title: t("cncMachining"),
+      image: service9,
+      className: "md:col-span-4 h-[450px]"
+    },
+    {
+      id: "09.",
+      title: t("aluminumProcessing"),
+      image: service11,
+      className: "md:col-span-8 h-[450px]"
+    },
+    {
+      id: "11.",
+      title: t("metalConcetrate"),
+      image: service12,
+className: "md:col-span-4 h-[450px]"
+    },
   ];
 
   return (

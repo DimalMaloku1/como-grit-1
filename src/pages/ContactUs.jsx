@@ -12,18 +12,41 @@ export default function ContactUs() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        fullName: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-    }, 3000);
+
+    const form = new FormData();
+    form.append("access_key", "9c94331e-1b64-49eb-8081-ddb9651d530f");
+    form.append("name", formData.fullName);
+    form.append("email", formData.email);
+    form.append("subject", formData.subject);
+    form.append("message", formData.message);
+
+    const object = Object.fromEntries(form);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      setSubmitted(true);
+
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({
+          fullName: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      }, 3000);
+    }
   };
 
   const handleChange = (e) => {
@@ -35,11 +58,14 @@ export default function ContactUs() {
   };
 
   const contactInfo = {
-    address: "Rooseveltova 12, 21000 Split, Croatia",
-    phone: "+385 1 234 5678",
-    email: "service@comogrit.com",
-   
-  };
+  address: "Rooseveltova 12, 21000 Split, Croatia",
+  phones: [
+    "+385 99 500 1059",
+    "+385 99 500 1038",
+    "+385 99 500 1037",
+  ],
+  email: "service@comogrit.com",
+};
 
   return (
     <div className="min-h-screen bg-white overflow-hidden">
@@ -72,6 +98,7 @@ export default function ContactUs() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
+
                   <div className="animate-fadeInUp" style={{ animationDelay: '0.35s' }}>
                     <label htmlFor="fullName" className="block text-sm font-semibold text-slate-900 mb-2">
                       {t('fullNameLabel')}
@@ -136,13 +163,17 @@ export default function ContactUs() {
                     />
                   </div>
 
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 mt-6 animate-fadeInUp animate-pulse-soft"
-                    style={{ animationDelay: '0.6s' }}
-                  >
-                    {t('sendButtonText')}
-                  </button>
+                <button
+  type="submit"
+  disabled
+  className="w-full bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold transition-all duration-300 shadow-lg mt-6 animate-fadeInUp 
+  disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-blue-600"
+  style={{ animationDelay: '0.6s' }}
+>
+  {t('sendButtonText')}
+</button>
+                  
+
                 </form>
               )}
             </div>
@@ -154,67 +185,79 @@ export default function ContactUs() {
               </h2>
 
               <div className="space-y-6">
+
                 <div className="flex items-start gap-4 animate-fadeInUp" style={{ animationDelay: '0.45s' }}>
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center animate-scaleIn" style={{ animationDelay: '0.5s' }}>
+                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center animate-scaleIn">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 mb-1 text-sm sm:text-base">{t('addressLabel')}</h3>
-                    <p className="text-slate-600 text-xs sm:text-sm">{contactInfo.address}</p>
+                    <h3 className="font-bold text-slate-900 mb-1">{t('addressLabel')}</h3>
+                    <p className="text-slate-600 text-sm">{contactInfo.address}</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 animate-fadeInUp" style={{ animationDelay: '0.55s' }}>
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center animate-scaleIn" style={{ animationDelay: '0.6s' }}>
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-slate-900 mb-1 text-sm sm:text-base">{t('phoneLabel')}</h3>
-                    <a href={`tel:${contactInfo.phone}`} className="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium transition-colors">
-                      {contactInfo.phone}
-                    </a>
-                  </div>
-                </div>
+               <div className="flex items-start gap-4 animate-fadeInUp">
+  <div className="flex-shrink-0">
+    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+      <Phone className="w-6 h-6 text-white" />
+    </div>
+  </div>
 
-                <div className="flex items-start gap-4 animate-fadeInUp" style={{ animationDelay: '0.65s' }}>
+ <div>
+  <h3 className="font-bold text-slate-900 mb-1">{t('phoneLabel')}</h3>
+
+  <div className="flex flex-col">
+    {contactInfo.phones.map((phone, index) => (
+      <span
+        key={index}
+        className="text-blue-600 text-sm"
+      >
+        {phone}
+      </span>
+    ))}
+  </div>
+</div>
+</div>
+
+                <div className="flex items-start gap-4 animate-fadeInUp">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center animate-scaleIn" style={{ animationDelay: '0.7s' }}>
+                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 mb-1 text-sm sm:text-base">{t('emailContactLabel')}</h3>
-                    <a href={`mailto:${contactInfo.email}`} className="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium transition-colors">
+                    <h3 className="font-bold text-slate-900 mb-1">{t('emailContactLabel')}</h3>
+                    <a href={`mailto:${contactInfo.email}`} className="text-blue-600 text-sm">
                       {contactInfo.email}
                     </a>
                   </div>
                 </div>
 
-                <div className="mt-8 pt-8 border-t-2 border-slate-200 animate-fadeInUp" style={{ animationDelay: '0.75s' }}>
-                  <h3 className="font-bold text-slate-900 mb-4 text-sm sm:text-base flex items-center gap-2">
+                <div className="mt-8 pt-8 border-t-2 border-slate-200 animate-fadeInUp">
+                  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
                     <MapPin className="w-5 h-5 text-blue-600" />
                     {t('ourLocationTitle')}
                   </h3>
+
                   <div className="w-full h-64 bg-slate-100 rounded-lg overflow-hidden">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1446.9875022032882!2d16.451569238962932!3d43.50285698829211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRooseveltova%2012%2C%2021000%20Split%2C%20Croatia!5e0!3m2!1sen!2s!4v1772888431955!5m2!1sen!2s"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
-                      allowFullScreen=""
                       loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="COMO GRIT Location - Rooseveltova 12, Split, Croatia"
+                      title="COMO GRIT Location"
                       className="w-full h-full"
                     ></iframe>
                   </div>
+
                 </div>
+
               </div>
             </div>
+
           </div>
 
         </div>
@@ -232,10 +275,6 @@ export default function ContactUs() {
         @keyframes slideInRight {
           from { opacity: 0; transform: translateX(50px); }
           to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes slideInUp {
-          from { opacity: 0; transform: translateY(40px); }
-          to { opacity: 1; transform: translateY(0); }
         }
         @keyframes scaleIn {
           from { opacity: 0; transform: scale(0.8); }
@@ -261,7 +300,6 @@ export default function ContactUs() {
         .animate-fadeInUp { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
         .animate-slideInLeft { animation: slideInLeft 0.7s ease-out forwards; opacity: 0; }
         .animate-slideInRight { animation: slideInRight 0.7s ease-out forwards; opacity: 0; }
-        .animate-slideInUp { animation: slideInUp 0.7s ease-out forwards; opacity: 0; }
         .animate-scaleIn { animation: scaleIn 0.5s ease-out forwards; opacity: 0; }
         .animate-bounceIn { animation: bounceIn 0.6s ease-out forwards; opacity: 0; }
         .animate-expandWidth { animation: expandWidth 0.8s ease-out forwards; }

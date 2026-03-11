@@ -110,13 +110,25 @@ export default function Footer() {
                   service@comogrit.com
                 </a>
               </li>
+<li>
+  {t("phoneLabel")}:
+</li>
 
-              <li>
-                {t("phoneLabel")}:{" "}
-                <a className="hover:text-white transition-colors">
-                  +1 111 111 111
-                </a>
-              </li>
+<li>
+  <a className="hover:text-white transition-colors">
+    +385 99 500 1059
+  </a>
+</li>
+<li>
+  <a className="hover:text-white transition-colors">
+    +385 99 500 1038
+  </a>
+</li>
+<li>
+  <a className="hover:text-white transition-colors">
+    +385 99 500 1037
+  </a>
+</li>
 
               <li>
                 {t("addressLabel")}:{" "}

@@ -57,10 +57,10 @@ const StatsSection = () => {
   }, []);
 
   const stats = [
-    { value: "10", label: t("yearsExperience"), suffix: "+" },
+    { value: "4", label: t("yearsExperience"), suffix: "+" },
     { value: "100", label: t("successRate"), suffix: "%" },
-    { value: "100", label: t("clients"), suffix: "+" },
-    { value: "120", label: t("projects"), suffix: "+" }
+    { value: "200", label: t("clients"), suffix: "+" },
+    { value: "200", label: t("projects"), suffix: "+" }
   ];
 
   return (

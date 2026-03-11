@@ -11,7 +11,34 @@ const resources = {
       services: "Services",
       gallery: "Gallery",
       contactUs: "Contact Us",
+      BuildingConstruction: "Building Construction",
 
+      // Construction Page
+      constructionHeroTitle: "Construction of Residential & Non-Residential Buildings",
+      constructionHeroText: "COMO GRIT delivers reliable building construction for residential, commercial, and industrial projects, combining modern engineering standards with durable materials and professional execution.",
+
+      constructionAboutTitle: "Professional Building Construction",
+      constructionAboutText1: "Our construction services include the development of residential, commercial, and industrial buildings. From initial planning to project completion, we coordinate every stage of construction to ensure quality, safety, and efficiency.",
+      constructionAboutText2: "We work closely with engineers, architects, and partners to deliver strong, reliable structures built according to modern construction standards.",
+
+      constructionServicesTitle: "Construction Services",
+
+      constructionService1Title: "Residential Buildings",
+      constructionService1Desc: "Construction of houses, apartment buildings, and residential developments built with durable materials and modern standards.",
+
+      constructionService2Title: "Commercial Buildings",
+      constructionService2Desc: "Development of offices, commercial spaces, and business facilities designed for functionality and long-term use.",
+
+      constructionService3Title: "Industrial Facilities",
+      constructionService3Desc: "Construction of warehouses and industrial buildings with strong structural frameworks and reinforced foundations.",
+
+      constructionService4Title: "Structural & Concrete Works",
+      constructionService4Desc: "Reinforced concrete foundations, structural frameworks, and load-bearing building elements.",
+
+      constructionProjectsTitle: "Construction Projects",
+
+      constructionCtaTitle: "Start Your Construction Project",
+      constructionCtaText: "Contact COMO GRIT d.o.o today to discuss residential, commercial, or industrial construction projects.",
       // Hero Section
       heroTitle: "Precision Metal Fabrication & Industrial Solutions",
       heroText: "Advanced metal processing and cutting technologies delivering exceptional quality and precision for your industrial projects",
@@ -20,19 +47,24 @@ const resources = {
       viewProjects: "View Projects",
 
       // Home - About Component
-      aboutTitle: "About COMO GRIT",
-      ourStory: "Our Story",
-      aboutText1: "Founded with a passion for excellence and precision, COMO GRIT has been delivering premium solutions since our inception. We started with a simple mission: to provide exceptional craftsmanship and reliability to every client we serve.",
-      aboutText2: "Over the years, we've grown from a small team to a dedicated workforce of skilled professionals who share our commitment to quality and innovation. Our journey has been marked by continuous improvement, technological advancement, and an unwavering focus on customer satisfaction.",
-      aboutText3: "Today, COMO GRIT stands as a trusted name in the industry, known for our expertise, precision, and commitment to delivering outstanding results on every project.",
-      learnMoreAbout: "Learn More About Us",
+      
+aboutTitle: "About COMO GRIT d.o.o",
+  ourStory: "Our Story",
+  aboutText1: "Founded with a passion for excellence and precision, COMO GRIT d.o.o is a premier Croatian company that has been delivering premium industrial solutions since our inception. Based in Croatia, we started with a simple mission: to provide exceptional craftsmanship and reliability to every client we serve.",
+  aboutText2: "Over the years, we've grown from a small team to a dedicated workforce of skilled professionals who share our commitment to quality and innovation. Our journey in the Croatian industrial sector has been marked by continuous improvement, technological advancement, and an unwavering focus on customer satisfaction.",
+  aboutText3: "Today, COMO GRIT d.o.o stands as a trusted name in the industry, known for our expertise in metal processing and fabrication, and our commitment to delivering outstanding results on every project.",
+  learnMoreAbout: "Learn More About Us",
 
       // About Page
       aboutPageTitle: "Experts in Metal Processing",
       aboutPageStory: "Our Story",
-      aboutPageText1: "Founded with a passion for excellence and precision, COMO GRIT has been delivering premium solutions since our inception. We started with a simple mission: to provide exceptional craftsmanship and reliability to every client we serve.",
-      aboutPageText2: "Over the years, we've grown from a small team to a dedicated workforce of skilled professionals who share our commitment to quality and innovation. Our journey has been marked by continuous improvement, technological advancement, and an unwavering focus on customer satisfaction.",
-      aboutPageText3: "Today, COMO GRIT stands as a trusted name in the industry, known for our expertise, precision, and commitment to delivering outstanding results on every project.",
+     
+aboutPageText1: "COMO GRIT is a Croatian industrial company dedicated to delivering reliable and high-quality metal processing and manufacturing solutions. Founded with a strong passion for precision, craftsmanship, and engineering excellence, the company was established with a clear goal: to provide dependable industrial services and long-term value to partners and clients across different sectors. From the very beginning, our focus has been on combining skilled workmanship with modern technologies to ensure that every project meets the highest standards of quality and efficiency.",
+
+aboutPageText2: "Headquartered in Croatia, COMO GRIT has steadily developed its capabilities in metal processing, fabrication, machining, and aluminum recovery. What started as a small and ambitious operation has grown into a dedicated team of professionals who share a common commitment to innovation, technical expertise, and continuous improvement. By investing in advanced equipment and maintaining strict quality standards, we ensure that every stage of production — from material preparation to final processing — is carried out with precision and reliability.",
+
+aboutPageText3: "Today, COMO GRIT is recognized as a dependable partner for industrial projects that require accuracy, durability, and professional execution. Our company works closely with clients to understand their technical requirements and deliver tailored solutions that meet real industrial demands. Through dedication, technical know-how, and a commitment to excellence, we continue to build strong partnerships and contribute to the development of modern industry in Croatia and beyond.",
+
       professionalism: "Professionalism",
       quality: "Quality",
       precision: "Precision",
@@ -40,7 +72,7 @@ const resources = {
       whyChooseUs: "Why Choose Us?",
       whyChooseUsText1: "Whether you need mass production or custom-made metal components, we're here to provide top-quality service and support. Our mission is to build long-term partnerships based on trust, quality, and precision.",
       whyChooseUsText2: "Our vision is to continuously advance our technology and workforce, driven by ongoing investments in innovation and knowledge to expand our project scope.",
-      whyChooseUsQuote: "Our expertise machining, laser cutting, and metal structure fabrication guarantees outstanding results for every client.",
+      whyChooseUsQuote: "Our expertise in machining, laser cutting, and metal structure fabrication guarantees outstanding results for every client.",
       uncompromisingQuality: "Uncompromising Quality",
       uncompromisingQualityDesc: "We use top-of-the-line equipment and certified materials to ensure every component meets the highest industry standards.",
       technicalExpertise: "Technical Expertise",
@@ -48,6 +80,10 @@ const resources = {
       fastReliableDelivery: "Fast and Reliable Delivery",
       fastReliableDeliveryDesc: "We respect strict deadlines and guarantee efficiency through optimized production processes and modern technological solutions.",
       keyHighlights: "Key Highlights:",
+
+//gallery title
+galleryTitle: "Some of Our Projects",
+
 
       // Stats Section
       statsTitle: "Experience and Customer Satisfaction",
@@ -77,6 +113,16 @@ const resources = {
       metalMeltingBullet2: "Precise control for consistent metal quality.",
       metalMeltingBullet3: "Suitable for steel, aluminum, and other alloys.",
 
+      machiningToolsFabrication: "Machining Tools Fabrication",
+      machiningToolsFabricationDesc: "Our fabrication process ensures that every tool meets strict quality standards, allowing manufacturers to achieve clean cuts, tight tolerances, and efficient production. By combining skilled craftsmanship with modern machining technology, we produce reliable tooling solutions suitable for both standard and specialized machining needs.",
+
+      machiningToolsFabricationBullet1: "Drill",
+      machiningToolsFabricationBullet2: "Reamers",
+      machiningToolsFabricationBullet3: "Molding Cutter",
+      machiningToolsFabricationBullet4: "Milling Cutter",
+      machiningToolsFabricationBullet5: "Screw-In Heads",
+      machiningToolsFabricationBullet6: "Deburrer",
+
       waterJetCutting: "Water Jet Cutting",
       waterJetCuttingDesc: "Water jet cutting uses a high-pressure stream of water mixed with abrasives to cut metal with extreme precision. This cold-cutting process avoids heat distortion and preserves the material's structural properties.",
       waterJetCuttingBullet1: "No heat-affected zones or material warping.",
@@ -104,6 +150,14 @@ const resources = {
       metalForming: "Metal Forming",
       metalProcessing: "Metal Processing",
 
+        metalConcetrate: "Metal Concentrates",
+      //metalConcetrateDesc: "We supply and trade high-quality metal concentrates including zinc, magnesium, chromium, and lead, used in metallurgical processing and industrial production. These materials are essential for metal refining, alloy production, and various manufacturing applications. Our operations focus on reliable sourcing, consistent product quality, and efficient logistics to meet the demands of industrial clients and international partners.",
+      //metalConcetrateBullet1: "Zinc",
+      //metalConcetrateBullet2: "Magnesium",
+      //metalConcetrateBullet3: "Chromium",
+      //metalConcetrateBullet4: "Lead",
+
+
       // WhyChooseUs
       whyChooseUsTitle: "Why Choose COMO GRIT",
       whyChooseUsSubtitle: "Industry-leading capabilities backed by years of expertise",
@@ -115,17 +169,7 @@ const resources = {
         { title: "Skilled Technicians", description: "Experienced professionals with expertise in advanced metalworking" }
       ],
 
-      // Gallery
-      galleryTitle: "Our Projects",
-      gallerySubtitle: "A showcase of our precision metalwork and industrial fabrication capabilities",
-      galleryProjects: [
-        { title: "Structural Steel Work", image: "https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Laser Cutting Project", image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Custom Metal Fabrication", image: "https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Industrial Components", image: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Precision Cutting", image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Metal Processing", image: "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800" }
-      ],
+   
 
       // QuoteForm
       quoteTitle: "Request a Quote",
@@ -176,6 +220,32 @@ const resources = {
       ],
       copyright: "All rights reserved.",
 
+      // Aluminum
+      aluminumProcessing: "Industrial Aluminum Processing Services",
+
+      aluminumProcessingDesc:
+      "Como Grit d.o.o. specializes in advanced aluminum recovery, utilizing professional melting and casting equipment to produce high-quality industrial ingots. With a total production capacity of 7,500 tons of ingots per year, our facility is equipped to handle large-scale secondary aluminum production.",
+
+      aluminumSec1Title: "1. Secondary Aluminum Recovery & Recycling",
+      aluminumSec1Point1: "Automotive industry parts",
+      aluminumSec1Point2: "Electrical wiring and industrial foils",
+      aluminumSec1Point3: "Siding and beverage cans",
+      aluminumSec1Point4: "Foundry returns and aluminum dross",
+
+      aluminumSec2Title: "2. High-Capacity Melting & Purification",
+      aluminumSec2Point1: "Preparation: Selected aluminum scrap is cut or shredded into small pieces to optimize the melting process.",
+      aluminumSec2Point2: "Thermal Processing: The scrap undergoes a specialized 5-hour melting process.",
+      aluminumSec2Point3: "Purification: Waste products and impurities are systematically removed during the molten stage.",
+
+      aluminumSec3Title: "3. Custom Alloy Casting",
+      aluminumSec3Point1: "Production of pure aluminum ingots and ADC 12 aluminum alloys",
+      aluminumSec3Point2: "Creation of 86% pure aluminum alloys",
+      aluminumSec3Point3: "Specialized off-grade alloys with high zinc content based on customer requirements",
+
+      aluminumSec4Title: "4. Quality Assurance & Lab Testing",
+      aluminumSec4Point1: "Inspection after every production stage to ensure consistency",
+      aluminumSec4Point2: "Laboratory analysis and sample testing to verify purity levels",
+
       // Contact Page
       contactPageTitle: "Contact Us Now",
       contactPageSubtitle: "Get in touch with our team to discuss your next project or schedule a consultation",
@@ -197,6 +267,14 @@ const resources = {
       emailContactLabel: "Email",
       ourLocationTitle: "Our Location",
 
+      cncMachining: "CNC Machining",
+      cncMachiningDesc:
+        "CNC machining allows us to manufacture high-precision metal components using computer-controlled machines. This process ensures exceptional accuracy, repeatability, and efficiency for both custom and large-scale production.",
+
+      cncMachiningBullet1: "High precision automated machining.",
+      cncMachiningBullet2: "Consistent quality for complex components.",
+      cncMachiningBullet3: "Ideal for prototypes and mass production.",
+
       // Gallery Page
       galleryPageTitle: "Our Expertise in Every Detail",
       galleryPageIntro1: "Welcome to our gallery where you can see our precision, quality, and dedication to metal processing. Through years of experience, we have developed a wide range of products—from",
@@ -217,6 +295,33 @@ const resources = {
       services: "Usluge",
       gallery: "Galerija",
       contactUs: "Kontakt",
+      BuildingConstruction: "Izgradnja Zgrada",
+      //Construction
+      constructionHeroTitle: "Izgradnja stambenih i nestambenih zgrada",
+      constructionHeroText: "COMO GRIT pruža pouzdane građevinske usluge za stambene, komercijalne i industrijske projekte, kombinirajući moderne inženjerske standarde s izdržljivim materijalima i profesionalnom izvedbom.",
+
+      constructionAboutTitle: "Profesionalna izgradnja zgrada",
+      constructionAboutText1: "Naše građevinske usluge uključuju razvoj stambenih, komercijalnih i industrijskih objekata. Od početnog planiranja do završetka projekta koordiniramo svaku fazu gradnje kako bismo osigurali kvalitetu, sigurnost i učinkovitost.",
+      constructionAboutText2: "Usko surađujemo s inženjerima, arhitektima i partnerima kako bismo isporučili čvrste i pouzdane objekte izgrađene prema modernim građevinskim standardima.",
+
+      constructionServicesTitle: "Građevinske usluge",
+
+      constructionService1Title: "Stambene zgrade",
+      constructionService1Desc: "Izgradnja kuća, stambenih zgrada i stambenih projekata s izdržljivim materijalima i modernim standardima.",
+
+      constructionService2Title: "Komercijalne zgrade",
+      constructionService2Desc: "Izgradnja ureda, poslovnih prostora i komercijalnih objekata dizajniranih za funkcionalnost i dugoročnu upotrebu.",
+
+      constructionService3Title: "Industrijski objekti",
+      constructionService3Desc: "Izgradnja skladišta i industrijskih objekata s jakim konstrukcijskim okvirima i ojačanim temeljima.",
+
+      constructionService4Title: "Konstrukcijski i betonski radovi",
+      constructionService4Desc: "Armiranobetonski temelji, konstrukcijski okviri i nosivi elementi zgrade.",
+
+      constructionProjectsTitle: "Građevinski projekti",
+
+      constructionCtaTitle: "Započnite svoj građevinski projekt",
+      constructionCtaText: "Kontaktirajte COMO GRIT d.o.o kako biste razgovarali o stambenim, komercijalnim ili industrijskim projektima.",
 
       // Hero Section
       heroTitle: "Precizna obrada metala i industrijska rješenja",
@@ -226,19 +331,20 @@ const resources = {
       viewProjects: "Pogledajte projekte",
 
       // Home - About Component
-      aboutTitle: "O COMO GRIT",
+          aboutTitle: "O tvrtki COMO GRIT d.o.o",
       ourStory: "Naša priča",
-      aboutText1: "Osnovani s strašću prema izvrsnosti i preciznosti, COMO GRIT isporučuje vrhunska rješenja od samog početka. Započeli smo s jednostavnom misijom: pružiti iznimnu izradu i pouzdanost svakom klijentu kojeg služimo.",
-      aboutText2: "Tijekom godina, izrasli smo iz malog tima u predanu radnu snagu vještih profesionalaca koji dijele našu predanost kvaliteti i inovacijama. Naš put obilježen je kontinuiranim unapređenjem, tehnološkim napretkom i nepokolebljivim fokusom na zadovoljstvo kupaca.",
-      aboutText3: "Danas, COMO GRIT stoji kao pouzdano ime u industriji, poznato po našoj stručnosti, preciznosti i predanosti isporuci izvanrednih rezultata na svakom projektu.",
+      aboutText1: "Osnovan sa strašću prema izvrsnosti i preciznosti, COMO GRIT d.o.o. je vodeća hrvatska tvrtka koja od svog osnutka pruža vrhunska industrijska rješenja. Sa sjedištem u Hrvatskoj, započeli smo s jednostavnom misijom: pružiti iznimnu kvalitetu izrade i pouzdanost svakom klijentu kojem služimo.",
+      aboutText2: "Tijekom godina izrasli smo iz malog tima u predanu radnu snagu sastavljenu od kvalificiranih stručnjaka koji dijele našu posvećenost kvaliteti i inovacijama. Naše putovanje u hrvatskom industrijskom sektoru obilježeno je kontinuiranim napretkom, tehnološkim razvojem i nepokolebljivim fokusom na zadovoljstvo kupaca.",
+      aboutText3: "Danas COMO GRIT d.o.o. predstavlja pouzdano ime u industriji, poznato po našoj stručnosti u obradi i izradi metala te po predanosti isporuci vrhunskih rezultata u svakom projektu.",
       learnMoreAbout: "Saznajte više o nama",
 
+      galleryTitle: "Neki od naših projekata",
       // About Page
       aboutPageTitle: "Stručnjaci za obradu metala",
       aboutPageStory: "Naša priča",
-      aboutPageText1: "Osnovani s strašću prema izvrsnosti i preciznosti, COMO GRIT isporučuje vrhunska rješenja od samog početka. Započeli smo s jednostavnom misijom: pružiti iznimnu izradu i pouzdanost svakom klijentu kojeg služimo.",
-      aboutPageText2: "Tijekom godina, izrasli smo iz malog tima u predanu radnu snagu vještih profesionalaca koji dijele našu predanost kvaliteti i inovacijama. Naš put obilježen je kontinuiranim unapređenjem, tehnološkim napretkom i nepokolebljivim fokusom na zadovoljstvo kupaca.",
-      aboutPageText3: "Danas, COMO GRIT stoji kao pouzdano ime u industriji, poznato po našoj stručnosti, preciznosti i predanosti isporuci izvanrednih rezultata na svakom projektu.",
+      aboutPageText1: "COMO GRIT je hrvatska industrijska tvrtka posvećena pružanju pouzdanih i visokokvalitetnih rješenja u obradi metala i proizvodnji. Osnovana s snažnom strašću prema preciznosti, vrhunskoj izradi i inženjerskoj izvrsnosti, tvrtka je nastala s jasnim ciljem: pružiti pouzdane industrijske usluge i dugoročnu vrijednost partnerima i klijentima iz različitih sektora. Od samog početka naš fokus je na kombiniranju stručnog zanatskog rada s modernim tehnologijama kako bismo osigurali da svaki projekt ispunjava najviše standarde kvalitete i učinkovitosti.",
+      aboutPageText2: "Sa sjedištem u Hrvatskoj, COMO GRIT kontinuirano razvija svoje sposobnosti u obradi metala, metalnoj izradi, strojnoj obradi i oporavku aluminija. Ono što je započelo kao mala i ambiciozna inicijativa razvilo se u posvećen tim stručnjaka koji dijele zajedničku predanost inovacijama, tehničkoj stručnosti i stalnom napretku. Ulaganjem u naprednu opremu i održavanjem strogih standarda kvalitete osiguravamo da se svaka faza proizvodnje — od pripreme materijala do završne obrade — provodi s maksimalnom preciznošću i pouzdanošću.",
+      aboutPageText3: "Danas je COMO GRIT prepoznat kao pouzdan partner za industrijske projekte koji zahtijevaju točnost, izdržljivost i profesionalnu izvedbu. Naša tvrtka blisko surađuje s klijentima kako bi razumjela njihove tehničke zahtjeve i ponudila prilagođena rješenja koja odgovaraju stvarnim industrijskim potrebama. Kroz predanost, tehničko znanje i težnju prema izvrsnosti nastavljamo graditi snažna partnerstva i doprinositi razvoju moderne industrije u Hrvatskoj i šire.",
       professionalism: "Profesionalnost",
       quality: "Kvaliteta",
       precision: "Preciznost",
@@ -246,7 +352,7 @@ const resources = {
       whyChooseUs: "Zašto odabrati nas?",
       whyChooseUsText1: "Bilo da vam treba masovna proizvodnja ili metalne komponente po narudžbi, ovdje smo da pružimo vrhunsku uslugu i podršku. Naša misija je izgraditi dugoročna partnerstva zasnovana na povjerenju, kvaliteti i preciznosti.",
       whyChooseUsText2: "Naša vizija je kontinuirano unapređivanje naše tehnologije i radne snage, pokretane stalnim ulaganjima u inovacije i znanje kako bismo proširili opseg naših projekata.",
-      whyChooseUsQuote: "Naša stručnost u obradi, laserskom rezanju i izradi metalnih struktura jamči izvanredne rezultate za svakog klijenta.",
+      whyChooseUsQuote: "Naša stručnost u strojnoj obradi, laserskom rezanju i izradi metalnih konstrukcija jamči izvanredne rezultate za svakog klijenta.",
       uncompromisingQuality: "Beskompromisna kvaliteta",
       uncompromisingQualityDesc: "Koristimo prvoklasnu opremu i certificirane materijale kako bismo osigurali da svaka komponenta zadovoljava najviše industrijske standarde.",
       technicalExpertise: "Tehnička stručnost",
@@ -262,6 +368,14 @@ const resources = {
       successRate: "Stopa uspjeha",
       clients: "Klijenti",
       projects: "Projekti",
+
+      cncMachining: "CNC obrada",
+      cncMachiningDesc:
+        "CNC obrada omogućuje proizvodnju visokopreciznih metalnih komponenti pomoću računalno upravljanih strojeva. Ovaj proces osigurava iznimnu točnost, ponovljivost i učinkovitost za pojedinačnu i serijsku proizvodnju.",
+
+      cncMachiningBullet1: "Visokoprecizna automatizirana obrada.",
+      cncMachiningBullet2: "Dosljedna kvaliteta za složene komponente.",
+      cncMachiningBullet3: "Idealno za prototipove i serijsku proizvodnju.",
 
       // Services
       servicesTitle: "Naše usluge",
@@ -301,11 +415,28 @@ const resources = {
       customMetalCuttingBullet2: "Precizno oblikovanje za industrijske i građevinske primjene.",
       customMetalCuttingBullet3: "Dosljedni rezultati za male i velike proizvodne serije.",
 
+      metalConcetrate: "Metalni koncentrati",
+//metalConcetrateDesc: "Opskrbljujemo i trgujemo visokokvalitetnim metalnim koncentratima uključujući cink, magnezij, krom i olovo, koji se koriste u metalurškoj obradi i industrijskoj proizvodnji. Ovi materijali su ključni za rafinaciju metala, proizvodnju legura i različite proizvodne procese. Naše poslovanje usmjereno je na pouzdanu nabavu, dosljednu kvalitetu proizvoda i učinkovitu logistiku kako bismo zadovoljili potrebe industrijskih klijenata i međunarodnih partnera.",
+//metalConcetrateBullet1: "Cink",
+//metalConcetrateBullet2: "Magnezij",
+//metalConcetrateBullet3: "Krom",
+//metalConcetrateBullet4: "Olovo",
+
       metalCasting: "Lijevanje metala",
       metalCastingDesc: "Lijevanje metala omogućuje nam proizvodnju složenih metalnih komponenti lijevanjem rastaljenog metala u precizne kalupe. Ova metoda je idealna za izradu čvrstih dijelova sa zamršenim oblicima i dosljednom kvalitetom.",
       metalCastingBullet1: "Prikladno za složene i detaljne metalne komponente.",
       metalCastingBullet2: "Čvrsti i izdržljivi gotovi metalni dijelovi.",
       metalCastingBullet3: "Učinkovito za prototipove i proizvodne serije.",
+
+      machiningToolsFabrication: "Izrada alatnih alata za obradu",
+      machiningToolsFabricationDesc: "Naš proces izrade osigurava da svaki alat zadovoljava stroge standarde kvalitete, omogućujući proizvođačima čiste rezove, precizne tolerancije i učinkovitu proizvodnju. Kombinacijom stručnog majstorstva i moderne tehnologije obrade proizvodimo pouzdana alatna rješenja pogodna za standardne i specijalizirane potrebe obrade.",
+
+      machiningToolsFabricationBullet1: "Svrdla",
+      machiningToolsFabricationBullet2: "Razvrtači",
+      machiningToolsFabricationBullet3: "Rezači za kalupe",
+      machiningToolsFabricationBullet4: "Glodala",
+      machiningToolsFabricationBullet5: "Navojne glave",
+      machiningToolsFabricationBullet6: "Alati za uklanjanje srha",
 
       metalForming: "Obrada metala",
       metalProcessing: "Prerada metala",
@@ -320,16 +451,7 @@ const resources = {
         { title: "Iskusni tehničari", description: "Iskusni profesionalci s ekspertizom u naprednoj obradi metala" }
       ],
 
-      galleryTitle: "Naši projekti",
-      gallerySubtitle: "Prikaz naših preciznih metalnih i industrijskih radova",
-      galleryProjects: [
-        { title: "Strukturni čelični radovi", image: "https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Laserski projekt", image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Prilagođena metalna izrada", image: "https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Industrijski dijelovi", image: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Precizno rezanje", image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Obrada metala", image: "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800" }
-      ],
+    
 
       quoteTitle: "Zatražite ponudu",
       quoteSubtitle: "Recite nam o svom projektu i javit ćemo vam se s detaljnom ponudom",
@@ -357,26 +479,26 @@ const resources = {
       saturdayTime: "8:00 - 14:00",
       sunday: "Nedjelja:",
       sundayTime: "Zatvoreno",
-       // Footer
+
      // Footer
-footerDesc: "Precizna izrada metala i industrijska rješenja uz vrhunsku tehnologiju i stručno majstorstvo.",
-footerQuickLinks: "Brze poveznice",
-footerHome: "Početna",
-footerAbout: "O nama",
-footerServices: "Usluge",
-footerProjects: "Projekti",
-footerContact: "Kontakt",
-Gallery: "Galerija",
-footerOurServices: "Naše usluge",
-footerServiceList: [
-  "Metalne konstrukcije",
-  "Lasersko rezanje",
-  "Rezanje vodenim mlazom",
-  "Lijevanje metala",
-  "Oblikovanje metala",
-  "Obrada metala"
-],
-copyright: "Sva prava pridržana.",
+      footerDesc: "Precizna izrada metala i industrijska rješenja uz vrhunsku tehnologiju i stručno majstorstvo.",
+      footerQuickLinks: "Brze poveznice",
+      footerHome: "Početna",
+      footerAbout: "O nama",
+      footerServices: "Usluge",
+      footerProjects: "Projekti",
+      footerContact: "Kontakt",
+      Gallery: "Galerija",
+      footerOurServices: "Naše usluge",
+      footerServiceList: [
+        "Metalne konstrukcije",
+        "Lasersko rezanje",
+        "Rezanje vodenim mlazom",
+        "Lijevanje metala",
+        "Oblikovanje metala",
+        "Obrada metala"
+      ],
+      copyright: "Sva prava pridržana.",
 
       // Contact Page
       contactPageTitle: "Kontaktirajte nas odmah",
@@ -399,6 +521,30 @@ copyright: "Sva prava pridržana.",
       emailContactLabel: "Email",
       ourLocationTitle: "Naša lokacija",
 
+      // Aluminum Hr
+      aluminumProcessing: "Industrijska obrada aluminija",
+      aluminumProcessingDesc:
+      "Como Grit d.o.o. specijaliziran je za napredni oporavak aluminija koristeći profesionalnu opremu za taljenje i lijevanje kako bi proizveo visokokvalitetne industrijske ingote. S ukupnim proizvodnim kapacitetom od 7.500 tona ingota godišnje, naše postrojenje je opremljeno za veliku proizvodnju sekundarnog aluminija.",
+      aluminumSec1Title: "1. Sekundarni oporavak i recikliranje aluminija",
+      aluminumSec1Point1: "Dijelovi iz automobilske industrije",
+      aluminumSec1Point2: "Električne žice i industrijske folije",
+      aluminumSec1Point3: "Aluminijske obloge i limenke za piće",
+      aluminumSec1Point4: "Ljevaonički povrat i aluminijska troska",
+
+      aluminumSec2Title: "2. Taljenje velikog kapaciteta i pročišćavanje",
+      aluminumSec2Point1: "Priprema: Odabrani aluminijski otpad reže se ili usitnjava na manje komade kako bi se optimizirao proces taljenja.",
+      aluminumSec2Point2: "Toplinska obrada: Otpad prolazi kroz specijalizirani proces taljenja koji traje približno 5 sati.",
+      aluminumSec2Point3: "Pročišćavanje: Otpadni proizvodi i nečistoće sustavno se uklanjaju tijekom faze rastaljenog metala.",
+
+      aluminumSec3Title: "3. Lijevanje prilagođenih legura",
+      aluminumSec3Point1: "Proizvodnja čistih aluminijskih ingota i ADC 12 aluminijskih legura",
+      aluminumSec3Point2: "Izrada aluminijskih legura čistoće 86%",
+      aluminumSec3Point3: "Specijalizirane legure s visokim udjelom cinka prema zahtjevima kupaca",
+
+      aluminumSec4Title: "4. Kontrola kvalitete i laboratorijska ispitivanja",
+      aluminumSec4Point1: "Inspekcija nakon svake faze proizvodnje kako bi se osigurala dosljednost",
+      aluminumSec4Point2: "Laboratorijska analiza i testiranje uzoraka za provjeru razine čistoće",
+
       // Gallery Page
       galleryPageTitle: "Naša stručnost u svakom detalju",
       galleryPageIntro1: "Dobrodošli u našu galeriju gdje možete vidjeti našu preciznost, kvalitetu i predanost obradi metala. Kroz godine iskustva razvili smo širok asortiman proizvoda—od",
@@ -419,6 +565,34 @@ copyright: "Sva prava pridržana.",
       services: "Dienstleistungen",
       gallery: "Galerie",
       contactUs: "Kontakt",
+      BuildingConstruction: "Hochbau",
+
+      //Construction
+      constructionHeroTitle: "Bau von Wohn- und Nichtwohngebäuden",
+      constructionHeroText: "COMO GRIT bietet zuverlässige Bauleistungen für Wohn-, Gewerbe- und Industrieprojekte und kombiniert moderne Ingenieurstandards mit langlebigen Materialien und professioneller Ausführung.",
+
+      constructionAboutTitle: "Professioneller Hochbau",
+      constructionAboutText1: "Unsere Bauleistungen umfassen die Entwicklung von Wohn-, Gewerbe- und Industriegebäuden. Von der ersten Planung bis zur Fertigstellung koordinieren wir jede Bauphase, um Qualität, Sicherheit und Effizienz zu gewährleisten.",
+      constructionAboutText2: "Wir arbeiten eng mit Ingenieuren, Architekten und Partnern zusammen, um stabile und zuverlässige Bauwerke nach modernen Baustandards zu realisieren.",
+
+      constructionServicesTitle: "Bauleistungen",
+
+      constructionService1Title: "Wohngebäude",
+      constructionService1Desc: "Bau von Häusern, Wohngebäuden und Wohnanlagen mit langlebigen Materialien und modernen Standards.",
+
+      constructionService2Title: "Gewerbegebäude",
+      constructionService2Desc: "Entwicklung von Büros, Geschäftsräumen und gewerblichen Einrichtungen für langfristige Nutzung.",
+
+      constructionService3Title: "Industrieanlagen",
+      constructionService3Desc: "Bau von Lagerhallen und Industriegebäuden mit stabilen Konstruktionen und verstärkten Fundamenten.",
+
+      constructionService4Title: "Struktur- und Betonarbeiten",
+      constructionService4Desc: "Stahlbetonfundamente, tragende Konstruktionen und strukturelle Gebäudeelemente.",
+
+      constructionProjectsTitle: "Bauprojekte",
+
+      constructionCtaTitle: "Starten Sie Ihr Bauprojekt",
+      constructionCtaText: "Kontaktieren Sie COMO GRIT d.o.o, um Wohn-, Gewerbe- oder Industrieprojekte zu besprechen.",
 
       // Hero Section
       heroTitle: "Präzise Metallfertigung & Industrielle Lösungen",
@@ -427,20 +601,23 @@ copyright: "Sva prava pridržana.",
       contactUsBtn: "Kontaktieren Sie uns",
       viewProjects: "Projekte ansehen",
 
+
+       galleryTitle: "Einige unserer Projekte",
+       
       // Home - About Component
-      aboutTitle: "Über COMO GRIT",
-      ourStory: "Unsere Geschichte",
-      aboutText1: "Gegründet mit einer Leidenschaft für Exzellenz und Präzision, liefert COMO GRIT seit unserer Gründung erstklassige Lösungen. Wir begannen mit einer einfachen Mission: außergewöhnliche Handwerkskunst und Zuverlässigkeit für jeden Kunden zu bieten.",
-      aboutText2: "Im Laufe der Jahre sind wir von einem kleinen Team zu einer engagierten Belegschaft qualifizierter Fachleute gewachsen, die unser Engagement für Qualität und Innovation teilen. Unser Weg war geprägt von kontinuierlicher Verbesserung, technologischem Fortschritt und einem unerschütterlichen Fokus auf Kundenzufriedenheit.",
-      aboutText3: "Heute steht COMO GRIT als vertrauenswürdiger Name in der Branche, bekannt für unsere Expertise, Präzision und unser Engagement für herausragende Ergebnisse bei jedem Projekt.",
-      learnMoreAbout: "Erfahren Sie mehr über uns",
+    aboutTitle: "Über COMO GRIT d.o.o",
+ourStory: "Unsere Geschichte",
+aboutText1: "Gegründet mit einer Leidenschaft für Exzellenz und Präzision ist COMO GRIT d.o.o. ein führendes kroatisches Unternehmen, das seit seiner Gründung hochwertige industrielle Lösungen liefert. Mit Sitz in Kroatien begannen wir mit einer einfachen Mission: außergewöhnliche Handwerksqualität und Zuverlässigkeit für jeden Kunden zu bieten, den wir bedienen.",
+aboutText2: "Im Laufe der Jahre sind wir von einem kleinen Team zu einer engagierten Belegschaft aus qualifizierten Fachkräften gewachsen, die unser Engagement für Qualität und Innovation teilen. Unser Weg im kroatischen Industriesektor ist geprägt von kontinuierlicher Verbesserung, technologischem Fortschritt und einem unerschütterlichen Fokus auf Kundenzufriedenheit.",
+aboutText3: "Heute steht COMO GRIT d.o.o. als vertrauenswürdiger Name in der Branche, bekannt für unsere Expertise in der Metallverarbeitung und -fertigung sowie für unser Engagement, bei jedem Projekt hervorragende Ergebnisse zu liefern.",
+learnMoreAbout: "Mehr über uns erfahren",
 
       // About Page
       aboutPageTitle: "Experten in der Metallverarbeitung",
       aboutPageStory: "Unsere Geschichte",
-      aboutPageText1: "Gegründet mit einer Leidenschaft für Exzellenz und Präzision, liefert COMO GRIT seit unserer Gründung erstklassige Lösungen. Wir begannen mit einer einfachen Mission: außergewöhnliche Handwerkskunst und Zuverlässigkeit für jeden Kunden zu bieten.",
-      aboutPageText2: "Im Laufe der Jahre sind wir von einem kleinen Team zu einer engagierten Belegschaft qualifizierter Fachleute gewachsen, die unser Engagement für Qualität und Innovation teilen. Unser Weg war geprägt von kontinuierlicher Verbesserung, technologischem Fortschritt und einem unerschütterlichen Fokus auf Kundenzufriedenheit.",
-      aboutPageText3: "Heute steht COMO GRIT als vertrauenswürdiger Name in der Branche, bekannt für unsere Expertise, Präzision und unser Engagement für herausragende Ergebnisse bei jedem Projekt.",
+     aboutPageText1: "COMO GRIT ist ein kroatisches Industrieunternehmen, das sich auf zuverlässige und hochwertige Lösungen in der Metallverarbeitung und Fertigung spezialisiert hat. Gegründet aus einer starken Leidenschaft für Präzision, Handwerkskunst und technische Exzellenz, wurde das Unternehmen mit einem klaren Ziel ins Leben gerufen: verlässliche industrielle Dienstleistungen zu bieten und langfristigen Mehrwert für Partner und Kunden aus verschiedenen Branchen zu schaffen. Von Anfang an lag unser Fokus darauf, qualifizierte Handwerksarbeit mit modernen Technologien zu verbinden, um sicherzustellen, dass jedes Projekt höchste Standards in Qualität und Effizienz erfüllt.",
+aboutPageText2: "Mit Hauptsitz in Kroatien hat COMO GRIT seine Kompetenzen in der Metallverarbeitung, Metallfertigung, mechanischen Bearbeitung und Aluminiumrückgewinnung kontinuierlich ausgebaut. Was als kleine und ambitionierte Initiative begann, hat sich zu einem engagierten Team von Fachleuten entwickelt, die ein gemeinsames Engagement für Innovation, technisches Know-how und kontinuierliche Verbesserung teilen. Durch Investitionen in moderne Ausrüstung und die Einhaltung strenger Qualitätsstandards stellen wir sicher, dass jede Phase der Produktion — von der Materialvorbereitung bis zur Endverarbeitung — mit höchster Präzision und Zuverlässigkeit durchgeführt wird.",
+aboutPageText3: "Heute gilt COMO GRIT als zuverlässiger Partner für Industrieprojekte, die Präzision, Langlebigkeit und professionelle Ausführung erfordern. Unser Unternehmen arbeitet eng mit seinen Kunden zusammen, um deren technische Anforderungen zu verstehen und maßgeschneiderte Lösungen zu liefern, die den realen industriellen Anforderungen entsprechen. Durch Engagement, technisches Know-how und den Anspruch auf Exzellenz bauen wir weiterhin starke Partnerschaften auf und tragen zur Entwicklung der modernen Industrie in Kroatien und darüber hinaus bei.",
       professionalism: "Professionalität",
       quality: "Qualität",
       precision: "Präzision",
@@ -448,7 +625,7 @@ copyright: "Sva prava pridržana.",
       whyChooseUs: "Warum uns wählen?",
       whyChooseUsText1: "Ob Sie Massenproduktion oder maßgefertigte Metallkomponenten benötigen, wir sind hier, um erstklassigen Service und Support zu bieten. Unsere Mission ist es, langfristige Partnerschaften aufzubauen, die auf Vertrauen, Qualität und Präzision basieren.",
       whyChooseUsText2: "Unsere Vision ist es, unsere Technologie und Belegschaft kontinuierlich zu verbessern, angetrieben durch fortlaufende Investitionen in Innovation und Wissen, um unseren Projektumfang zu erweitern.",
-      whyChooseUsQuote: "Unsere Expertise in der Bearbeitung, im Laserschneiden und in der Metallstruktur-Fertigung garantiert herausragende Ergebnisse für jeden Kunden.",
+      whyChooseUsQuote: "Unsere Expertise in der mechanischen Bearbeitung, dem Laserschneiden und der Fertigung von Metallstrukturen garantiert jedem Kunden herausragende Ergebnisse.",
       uncompromisingQuality: "Kompromisslose Qualität",
       uncompromisingQualityDesc: "Wir verwenden erstklassige Ausrüstung und zertifizierte Materialien, um sicherzustellen, dass jede Komponente höchste Industriestandards erfüllt.",
       technicalExpertise: "Technische Expertise",
@@ -503,11 +680,28 @@ copyright: "Sva prava pridržana.",
       customMetalCuttingBullet2: "Präzisionsformung für industrielle und Bauanwendungen.",
       customMetalCuttingBullet3: "Konsistente Ergebnisse für kleine und große Produktionsläufe.",
 
+      metalConcetrate: "Metallkonzentrate",
+//metalConcetrateDesc: "Wir liefern und handeln mit hochwertigen Metallkonzentraten, darunter Zink, Magnesium, Chrom und Blei, die in der metallurgischen Verarbeitung und industriellen Produktion eingesetzt werden. Diese Materialien sind wesentlich für die Metallraffination, die Herstellung von Legierungen sowie für verschiedene industrielle Fertigungsprozesse. Unsere Tätigkeit konzentriert sich auf zuverlässige Beschaffung, gleichbleibende Produktqualität und effiziente Logistik, um die Anforderungen unserer internationalen Partner und Industriekunden zu erfüllen.",
+//metalConcetrateBullet1: "Zink",
+//metalConcetrateBullet2: "Magnesium",
+//metalConcetrateBullet3: "Chrom",
+//metalConcetrateBullet4: "Blei",
+
       metalCasting: "Metallguss",
       metalCastingDesc: "Metallguss ermöglicht es uns, komplexe Metallkomponenten herzustellen, indem geschmolzenes Metall in Präzisionsformen gegossen wird. Diese Methode ist ideal zur Herstellung starker Teile mit komplizierten Formen und konsistenter Qualität.",
       metalCastingBullet1: "Geeignet für komplexe und detaillierte Metallkomponenten.",
       metalCastingBullet2: "Starke und langlebige fertige Metallteile.",
       metalCastingBullet3: "Effizient für Prototypen und Produktionschargen.",
+
+      machiningToolsFabrication: "Fertigung von Bearbeitungswerkzeugen",
+      machiningToolsFabricationDesc: "Unser Fertigungsprozess stellt sicher, dass jedes Werkzeug strenge Qualitätsstandards erfüllt, sodass Hersteller saubere Schnitte, enge Toleranzen und eine effiziente Produktion erreichen können. Durch die Kombination von handwerklichem Können mit moderner Bearbeitungstechnologie produzieren wir zuverlässige Werkzeuglösungen für sowohl Standard- als auch spezialisierte Bearbeitungsanforderungen.",
+
+      machiningToolsFabricationBullet1: "Bohrer",
+      machiningToolsFabricationBullet2: "Reibahlen",
+      machiningToolsFabricationBullet3: "Formfräser",
+      machiningToolsFabricationBullet4: "Fräser",
+      machiningToolsFabricationBullet5: "Schraubköpfe",
+      machiningToolsFabricationBullet6: "Entgratwerkzeuge",
 
       metalForming: "Metallumformung",
       metalProcessing: "Metallverarbeitung",
@@ -521,18 +715,6 @@ copyright: "Sva prava pridržana.",
         { title: "Schnelle Bearbeitung", description: "Effiziente Prozesse zur Einhaltung Ihrer Fristen ohne Qualitätskompromisse" },
         { title: "Maßgeschneiderte Lösungen", description: "Maßgeschneiderte Fertigungsdienstleistungen nach Ihren genauen Spezifikationen" },
         { title: "Erfahrene Techniker", description: "Erfahrene Fachleute mit Expertise in fortgeschrittener Metallbearbeitung" }
-      ],
-
-      // Gallery
-      galleryTitle: "Unsere Projekte",
-      gallerySubtitle: "Eine Präsentation unserer Präzisionsmetallarbeiten und industriellen Fertigungsfähigkeiten",
-      galleryProjects: [
-        { title: "Stahlbauarbeiten", image: "https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Laserschneidprojekt", image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Maßgefertigte Metallfertigung", image: "https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Industrielle Komponenten", image: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Präzisionsschneiden", image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { title: "Metallverarbeitung", image: "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800" }
       ],
 
       // QuoteForm
@@ -563,6 +745,14 @@ copyright: "Sva prava pridržana.",
       saturdayTime: "8:00 - 14:00",
       sunday: "Sonntag:",
       sundayTime: "Geschlossen",
+
+      cncMachining: "CNC-Bearbeitung",
+      cncMachiningDesc:
+        "Die CNC-Bearbeitung ermöglicht die Herstellung hochpräziser Metallkomponenten mit computergesteuerten Maschinen. Dieser Prozess gewährleistet außergewöhnliche Genauigkeit, Wiederholbarkeit und Effizienz sowohl für Einzelanfertigungen als auch für Serienproduktion.",
+
+      cncMachiningBullet1: "Hochpräzise automatisierte Bearbeitung.",
+      cncMachiningBullet2: "Konstante Qualität für komplexe Komponenten.",
+      cncMachiningBullet3: "Ideal für Prototypen und Serienproduktion.",
 
       // Footer
       footerDesc: "Präzise Metallfertigung und industrielle Lösungen mit modernster Technologie und fachmännischer Handwerkskunst.",
@@ -604,6 +794,31 @@ copyright: "Sva prava pridržana.",
       phoneLabel: "Telefon",
       emailContactLabel: "Email",
       ourLocationTitle: "Unser Standort",
+
+      // Aluminum DE
+      aluminumProcessing: "Industrielle Aluminiumverarbeitung",
+      aluminumProcessingDesc:
+      "Como Grit d.o.o. ist auf die fortschrittliche Rückgewinnung von Aluminium spezialisiert und nutzt professionelle Schmelz- und Gießanlagen zur Herstellung hochwertiger industrieller Aluminium-Barren. Mit einer jährlichen Produktionskapazität von 7.500 Tonnen ist unsere Anlage für die großtechnische Sekundäraluminiumproduktion ausgelegt.",
+
+      aluminumSec1Title: "1. Sekundäre Aluminiumrückgewinnung und Recycling",
+      aluminumSec1Point1: "Teile aus der Automobilindustrie",
+      aluminumSec1Point2: "Elektrische Leitungen und industrielle Folien",
+      aluminumSec1Point3: "Verkleidungen und Getränkedosen",
+      aluminumSec1Point4: "Gießereirückläufe und Aluminiumschlacke",
+
+      aluminumSec2Title: "2. Hochkapazitäts-Schmelzen und Reinigung",
+      aluminumSec2Point1: "Vorbereitung: Ausgewählter Aluminiumschrott wird geschnitten oder zerkleinert, um den Schmelzprozess zu optimieren.",
+      aluminumSec2Point2: "Thermische Verarbeitung: Der Schrott durchläuft einen speziellen Schmelzprozess von etwa 5 Stunden.",
+      aluminumSec2Point3: "Reinigung: Abfallprodukte und Verunreinigungen werden während der Schmelzphase systematisch entfernt.",
+
+      aluminumSec3Title: "3. Gießen kundenspezifischer Legierungen",
+      aluminumSec3Point1: "Produktion von reinen Aluminium-Barren und ADC 12 Aluminiumlegierungen",
+      aluminumSec3Point2: "Herstellung von Aluminiumlegierungen mit 86 % Reinheit",
+      aluminumSec3Point3: "Spezialisierte Legierungen mit hohem Zinkgehalt nach Kundenanforderung",
+
+      aluminumSec4Title: "4. Qualitätssicherung und Labortests",
+      aluminumSec4Point1: "Inspektion nach jeder Produktionsphase zur Sicherstellung der Konsistenz",
+      aluminumSec4Point2: "Laboranalyse und Probenprüfung zur Überprüfung der Reinheitsgrade",
 
       // Gallery Page
       galleryPageTitle: "Unsere Expertise in jedem Detail",

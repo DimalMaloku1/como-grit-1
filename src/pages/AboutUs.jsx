@@ -49,27 +49,34 @@ const AboutUs = () => {
 
           {/* Our Story Section */}
           <div className="grid md:grid-cols-2 gap-12 mb-20">
-            <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">{t("aboutPageStory")}</h2>
+           <div>
+  <div className="flex items-center gap-3 mb-6">
+    <h2 className="text-3xl font-bold text-slate-900">
+      {t("aboutPageStory")}
+    </h2>
 
-              <div className="text-base text-slate-600 leading-7 space-y-4 mb-8">
-                <p>{t("aboutPageText1")}</p>
-                <p>{t("aboutPageText2")}</p>
-                <p>{t("aboutPageText3")}</p>
-              </div>
+    {/* Croatian Flag */}
+    <span className="fi fi-hr text-2xl"></span>
+  </div>
 
-              {/* 2x2 Tick Checkboxes */}
-              <div className="grid grid-cols-2 gap-y-4 gap-x-2">
-                {highlights.map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-4 h-4 text-white" strokeWidth={4} />
-                    </div>
-                    <span className="text-slate-900 font-bold text-base">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+  <div className="text-base text-slate-600 leading-7 space-y-4 mb-8">
+    <p>{t("aboutPageText1")}</p>
+    <p>{t("aboutPageText2")}</p>
+    <p>{t("aboutPageText3")}</p>
+  </div>
+
+  {/* 2x2 Tick Checkboxes */}
+  <div className="grid grid-cols-2 gap-y-4 gap-x-2">
+    {highlights.map((item) => (
+      <div key={item} className="flex items-center gap-3">
+        <div className="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+          <Check className="w-4 h-4 text-white" strokeWidth={4} />
+        </div>
+        <span className="text-slate-900 font-bold text-base">{item}</span>
+      </div>
+    ))}
+  </div>
+</div>
 
             <div className="bg-gradient-to-br from-slate-100 to-slate-50 rounded-lg p-6 flex flex-col justify-center">
               <div className="aspect-video bg-slate-300 rounded-lg flex items-center justify-center mb-6 overflow-hidden shadow-lg">
