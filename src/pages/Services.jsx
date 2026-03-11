@@ -12,6 +12,7 @@ import Service9 from '../assets/service9.webp'
 import Service10 from '../assets/service10.webp'
 import Service11 from '../assets/service11.webp'
 import Service12 from '../assets/service12.webp'
+import ServiceHero from '../assets/service1.webp'
 
 export default function Services() {
   const { t } = useTranslation();
@@ -163,16 +164,24 @@ export default function Services() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white">
-      
+    <div className="bg-white">
+      <div
+        className="relative min-h-96 flex items-center justify-center bg-cover bg-center animate-fadeInDown"
+        style={{
+          backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url(${ServiceHero})`,
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="text-center text-white px-4">
+          <h1 className="text-5xl font-bold mb-4">{t("servicesPageTitle")}</h1>
+          <p className="text-xl text-gray-100">{t("servicesPageSubtitle")}</p>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
       {/* Header Section */}
-      <div className="text-center mb-20">
-        <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
-          {t("servicesPageTitle")}
-        </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-          {t("servicesPageSubtitle")}
-        </p>
+      <div className="text-center mb-20 animate-fadeInUp">
       </div>
 
       {/* Services List */}
@@ -253,6 +262,20 @@ export default function Services() {
         ))}
       </div>
 
+      </div>
+
+      <style>{`
+        @keyframes fadeInDown {
+          from { opacity: 0; transform: translateY(-30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeInDown { animation: fadeInDown 0.6s ease-out forwards; }
+        .animate-fadeInUp { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+      `}</style>
     </div>
   );
 }

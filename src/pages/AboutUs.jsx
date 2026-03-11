@@ -11,7 +11,6 @@ import service6 from '../assets/service6.webp';
 const AboutUs = () => {
   const { t } = useTranslation();
 
-  // Data for the 3 feature cards using your imported assets
   const features = [
     {
       title: t("uncompromisingQuality"),
@@ -33,17 +32,28 @@ const AboutUs = () => {
     }
   ];
 
-  // Data for the 2x2 highlight grid
   const highlights = [t("professionalism"), t("quality"), t("precision"), t("experience")];
 
   return (
     <div className="min-h-screen bg-white">
+      <div
+        className="relative min-h-96 flex items-center justify-center bg-cover bg-center animate-fadeInDown"
+        style={{
+          backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url(${AboutHero})`,
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="text-center text-white px-4">
+          <h1 className="text-5xl font-bold mb-4">{t("aboutPageTitle")}</h1>
+          <div className="w-20 h-1 bg-blue-400 mx-auto"></div>
+        </div>
+      </div>
+
       <div className="pt-[100px]">
         <div className="max-w-7xl mx-auto px-6 py-16">
 
           {/* Header Section */}
-          <div className="mb-12">
-            <h1 className="text-5xl font-bold text-slate-900 mb-4">{t("aboutPageTitle")}</h1>
+          <div className="mb-12 animate-fadeInUp">
             <div className="w-20 h-1 bg-blue-600"></div>
           </div>
 
@@ -146,6 +156,19 @@ const AboutUs = () => {
 
         </div>
       </div>
+
+      <style>{`
+        @keyframes fadeInDown {
+          from { opacity: 0; transform: translateY(-30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeInDown { animation: fadeInDown 0.6s ease-out forwards; }
+        .animate-fadeInUp { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+      `}</style>
     </div>
   );
 };

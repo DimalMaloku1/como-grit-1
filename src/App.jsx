@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
+import { useEffect } from "react"
 
 import Header from "./components/Header"
 import Footer from './components/Footer'
@@ -10,11 +11,21 @@ import ContactUs from './pages/ContactUs'
 import Construction from "./pages/Construction"
 import 'flag-icons/css/flag-icons.min.css'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }, [pathname])
+
+  return null
+}
+
 export default function App() {
   return (
     <div>
-     
-<Header />
+      <ScrollToTop />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<AboutUs />} />
@@ -22,11 +33,8 @@ export default function App() {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Contact" element={<ContactUs />} />
         <Route path="/Construction" element={<Construction />} />
-
       </Routes>
-<Footer />
-     
-
+      <Footer />
     </div>
   )
 }
